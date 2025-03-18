@@ -1,0 +1,358 @@
+/* Achievements Page Styles */
+
+/* Hero Section for Achievements Page */
+.achievements-hero {
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('../images/gallery/img2.jpeg');
+    background-size: cover;
+    background-position: center;
+    padding: 150px 0 80px;
+    color: white;
+    text-align: center;
+}
+
+.achievements-hero .section-header h2 {
+    color: white;
+}
+
+/* Achievements Intro */
+.achievements-intro {
+    max-width: 800px;
+    margin: 30px auto 0;
+    text-align: center;
+}
+
+.achievements-intro p {
+    font-size: 1.2rem;
+    margin-bottom: 25px;
+    color: #ffffff;
+}
+
+.btn-outline {
+    display: inline-block;
+    background-color: transparent;
+    color: white;
+    padding: 12px 25px;
+    border: 2px solid white;
+    border-radius: 5px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.btn-outline:hover {
+    background-color: white;
+    color: var(--secondary-color);
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Achievements List Section */
+.achievements-list {
+    padding: 80px 0;
+    background-color: var(--light-color);
+}
+
+.year-section {
+    margin-bottom: 60px;
+}
+
+.year-heading {
+    color: var(--secondary-color);
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 30px;
+    position: relative;
+    display: inline-block;
+    padding-bottom: 10px;
+    border-bottom: 3px solid var(--primary-color);
+}
+
+.year-heading:after {
+    content: '';
+    position: absolute;
+    bottom: -3px;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background-color: var(--primary-color);
+}
+
+.achievement-items {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.achievement-item {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: all 0.3s ease;
+    margin-bottom: 40px;
+    display: flex;
+    flex-direction: row;
+}
+
+.achievement-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+}
+
+.achievement-image {
+    width: 45%;
+    min-width: 450px;
+    height: 450px;
+    position: relative;
+    overflow: hidden;
+}
+
+.achievement-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center top;
+    display: block;
+    transition: transform 0.3s ease;
+}
+
+.achievement-item:hover .achievement-image img {
+    transform: scale(1.05);
+}
+
+.achievement-content {
+    width: 55%;
+    padding: 25px 30px;
+    display: flex;
+    flex-direction: column;
+}
+
+.achievement-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 15px;
+    flex-wrap: wrap;
+}
+
+.achievement-title {
+    flex: 1;
+    margin-right: 15px;
+    margin-bottom: 10px;
+}
+
+.achievement-title h4 {
+    color: var(--secondary-color);
+    font-size: 1.6rem;
+    margin-bottom: 5px;
+}
+
+.achievement-date {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 8px 15px;
+    border-radius: 20px;
+    font-weight: 700;
+    font-size: 0.9rem;
+    display: inline-block;
+    white-space: nowrap;
+}
+
+.achievement-details {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+    margin-bottom: 15px;
+}
+
+.detail-item {
+    margin-bottom: 10px;
+}
+
+.detail-item span {
+    display: block;
+}
+
+.detail-label {
+    font-weight: 700;
+    color: var(--secondary-color);
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    margin-bottom: 5px;
+}
+
+.detail-value {
+    color: #555;
+    font-size: 1rem;
+}
+
+.achievement-experience {
+    background-color: #f9f9f9;
+    padding: 15px;
+    border-left: 3px solid var(--primary-color);
+    margin-top: auto;
+}
+
+.achievement-experience h5 {
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+    color: var(--secondary-color);
+}
+
+.achievement-experience p {
+    font-style: italic;
+    color: #666;
+    line-height: 1.5;
+}
+
+/* Share Achievement Section */
+.share-achievement {
+    background-color: var(--secondary-color);
+    color: white;
+    text-align: center;
+    padding: 40px;
+    margin-top: 60px;
+    border-radius: 10px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+}
+
+.share-achievement h3 {
+    font-size: 2rem;
+    margin-bottom: 15px;
+}
+
+.share-achievement p {
+    font-size: 1.1rem;
+    margin-bottom: 25px;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.share-achievement .btn {
+    background-color: var(--primary-color);
+    border: none;
+    padding: 12px 30px;
+    font-size: 1rem;
+}
+
+.share-achievement .btn:hover {
+    background-color: #fff;
+    color: var(--secondary-color);
+}
+
+/* Year Section Layout */
+.year-section {
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1000px;
+}
+
+/* Responsive Styles */
+@media (max-width: 1200px) {
+    .achievement-image {
+        min-width: 400px;
+        width: 42%;
+    }
+    
+    .achievement-content {
+        width: 58%;
+        padding: 20px 25px;
+    }
+}
+
+@media (max-width: 992px) {
+    .achievement-image {
+        min-width: 350px;
+        width: 40%;
+    }
+    
+    .achievement-content {
+        width: 60%;
+    }
+    
+    .achievement-title h4 {
+        font-size: 1.4rem;
+    }
+    
+    .achievement-details {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 768px) {
+    .achievement-item {
+        flex-direction: column;
+    }
+    
+    .achievement-image {
+        width: 100%;
+        min-width: 0;
+        height: 400px;
+    }
+    
+    .achievement-content {
+        width: 100%;
+        padding: 20px;
+    }
+    
+    .achievement-title h4 {
+        font-size: 1.3rem;
+    }
+    
+    .achievement-header {
+        gap: 10px;
+    }
+    
+    .share-achievement h3 {
+        font-size: 1.6rem;
+    }
+    
+    .share-achievement {
+        padding: 30px 20px;
+    }
+}
+
+@media (max-width: 576px) {
+    .achievements-hero {
+        padding: 120px 0 60px;
+    }
+    
+    .achievement-image {
+        height: 350px;
+    }
+    
+    .achievement-content {
+        padding: 15px;
+    }
+    
+    .achievement-title h4 {
+        font-size: 1.2rem;
+    }
+    
+    .achievement-date {
+        padding: 6px 12px;
+        font-size: 0.8rem;
+    }
+    
+    .detail-label {
+        font-size: 0.8rem;
+    }
+    
+    .detail-value {
+        font-size: 0.9rem;
+    }
+    
+    .achievement-experience h5 {
+        font-size: 1rem;
+    }
+    
+    .achievement-experience p {
+        font-size: 0.9rem;
+    }
+} 
